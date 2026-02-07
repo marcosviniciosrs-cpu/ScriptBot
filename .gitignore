@@ -1,0 +1,54 @@
+# --- ARQUIVOS DO PYTHON (PADRÃO) ---
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes Virtuais (IMPORTANTE IGNORAR)
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+
+# VS Code e Editores
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# --- CONFIGURAÇÃO DO SCRIPTBOT (MARCOS) ---
+
+# 1. Ignoramos a pasta venv para não subir lixo
+venv/
+
+# 2. Configuração da Pasta de Macros:
+# Primeiro, ignoramos absolutamente tudo dentro de macros/
+macros/*
+
+# 3. Abertura de Exceção (Whitelist):
+# Aqui você diz ao Git para NÃO ignorar o seu arquivo de exemplo
+# Se o seu arquivo tiver outro nome, é só mudar aqui embaixo:
+!macros/exemplo.py
+
+# Mantém a pasta existente no GitHub mesmo que vazia
+!macros/.gitkeep
