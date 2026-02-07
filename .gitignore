@@ -38,17 +38,15 @@ ENV/
 
 # --- CONFIGURAÇÃO DO SCRIPTBOT (MARCOS) ---
 
-# 1. Ignoramos a pasta venv para não subir lixo
+# 1. Ignoramos a pasta venv
 venv/
 
 # 2. Configuração da Pasta de Macros:
-# Primeiro, ignoramos absolutamente tudo dentro de macros/
+# Ignora tudo que estiver dentro da pasta macros
 macros/*
 
-# 3. Abertura de Exceção (Whitelist):
-# Aqui você diz ao Git para NÃO ignorar o seu arquivo de exemplo
-# Se o seu arquivo tiver outro nome, é só mudar aqui embaixo:
-!macros/exemplo.py
+# 3. EXCEÇÃO: Enviar APENAS o coordenadas.py
+!macros/coordenadas.py
 
-# Mantém a pasta existente no GitHub mesmo que vazia
+# Mantém a pasta macros lá no GitHub
 !macros/.gitkeep
