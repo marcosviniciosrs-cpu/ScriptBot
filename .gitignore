@@ -46,7 +46,7 @@ venv/
 macros/*
 
 # 3. EXCEÇÃO: Enviar APENAS o coordenadas.py
-!macros/coordenadas.py
+!macros/coordenadas/
 
 # Mantém a pasta macros lá no GitHub
 !macros/.gitkeep
